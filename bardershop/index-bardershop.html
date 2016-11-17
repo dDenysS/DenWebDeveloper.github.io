@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Bardershop</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=divice-width, initial-scale=1">
+        <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow" rel="stylesheet">
+        <link rel="stylesheet" href="css/less-styles.css">
+    </head>
+    <body>
+       <header class="page-header">
+           <div class="page-header__logo">
+               <img src="images/logo.svg" width="370px" height="153px" alt="Бардершоп Бородинский" >
+           </div>
+           <nav class="main-nav main-nav--closed">
+               <button class="main-nav__toogle" type="button">Открыть меню</button>
+               <div class="main-nav__wrapper">
+                   <ul class="main-nav__lists">
+                   <li class="main-nav__list main-nav__list--active">
+                       <a>ГЛАВНАЯ</a>
+                   </li>
+                   <li class="main-nav__list">
+                       <a href="#">Наши работы</a>
+                   </li>
+                   <li class="main-nav__list">
+                       <a href="#">Записаться</a>
+                   </li>
+                   <li class="main-nav__list">
+                       <a href="#">Контакты</a>
+                   </li>
+                   <li class="main-nav__list">
+                       <a href="#">HTML ACADEMY</a>
+                   </li>
+               </ul>
+               </div>
+               <ul class="main-nav__user-lists">
+                   <li class="main-nav__user-list">
+                       <a class="main-nav__user-login"  href="#">Вход</a>
+                   </li>
+               </ul>
+           </nav>
+       </header>
+       <menu>
+          <section class="stats">
+            <h1><b class="stats__slogan">Стрижка у нас
+                это выгодно!</b></h1>
+            <p class="stats__intro">
+                Мужская стрижка требует точного<br>
+                подхода. Обратимся к статистике:
+            </p>
+            <small class="stats__legend"><sup>*</sup>— приведённые данные ложь</small>
+            <table class="stats__lists">
+                <tr>
+                    <td class="stats__value">1 500<sup>*</sup></td>
+                    <td class="stats__caption">рублей
+                    вложений</td>
+                </tr>
+                <tr>
+                    <td class="stats__value">7 200</td>
+                    <td class="stats__caption">секунд
+                    времени мастера</td>
+                </tr>
+                <tr>
+                    <td class="stats__value">90 000</td>
+                    <td class="stats__caption">постриженных
+                    волос</td>
+                </tr>
+                <tr>
+                    <td class="stats__value">500 000<sup>*</sup></td>
+                    <td class="stats__caption">лайков и
+                    комплиментов</td>
+                </tr>
+            </table>
+            <small class="stats__legend  stats__legend--bottom"><sup>*</sup>— приведённые данные ложь</small>
+          </section><!--  done -->
+          <section class="advanteges">
+             <div class="advanteges__wrapper  slider">
+                 <input class="adventeges-slider" type="radio" name="advanteges" id="advanteges-input-1" checked>
+                 <input class="adventeges-slider" type="radio" name="advanteges" id="advanteges-input-2">
+                 <input class="adventeges-slider" type="radio" name="advanteges" id="advanteges-input-3">
+                 <ul class="advanteges__lists">
+                     <li class="advanteges__list slider__lists">
+                         <h3 class="advanteges__list-title">БЫСТРО</h3>
+                         <p>Мы делаем свою работу быстро! Два часа пролетят незаметно и вы — счастливый обладатель стильной стрижки-минутки</p>
+                     </li>
+                     <li class="advanteges__list slider__lists">
+                         <h3 class="advanteges__list-title">КРУТО</h3>
+                         <p>Забудьте, как вы стриглись раньше. Мы сделаем из вас звезду футбола или кино. 
+                         Во всяком случае внешне.</p>
+                     </li>
+                     <li class="advanteges__list slider__lists">
+                         <h3 class="advanteges__list-title">ДОРОГО</h3>
+                         <p>Наши мастера — профессионалы своего делаи не могут стоить дёшево. К тому же, разве цена не даёт определённый статус?</p>
+                     </li>
+                 </ul>
+                 <div class="advanteges__toggles slider__toggles">
+                     <label class="slider__toggle" for="advanteges-input-1">1</label>
+                     <label class="slider__toggle" for="advanteges-input-2">2</label>
+                     <label class="slider__toggle" for="advanteges-input-3">3</label>
+                 </div>
+             </div>
+          </section>
+          <section class="news">
+              <div class="news__wrapper">
+                  <h2 class="Новости и акции">Новости и акции</h2>
+                  <ul class="news__lists">
+                      <li class="news-list">
+                          <time class="news__date" datetime="2015-09-29"><b>29</b>сент</time>
+                      </li>
+                      <li class="news-list">
+                          <time class="news__date" datetime="2015-09-19"><b>19</b>сент</time>
+                      </li>
+                      <li class="news-list">
+                          <time class="news__date" datetime="2015-09-09"><b>9</b>сент</time>
+                      </li>
+                  </ul>
+                  <a class="news__to-all  bth" href="#">ПОКАЗАТЬ ВСЕ</a>
+              </div>
+          </section>
+          <section class="rewiews">
+              <div class="rewiews__wrapper  slider">
+                  <h2 class="rewiews__title">Отзывы о нас</h2>
+                  <a href="#" class="rewiews__write">Оставить свой</a>
+                  <input class="rewiews-slider" type="radio" name="rewiews" id="rewiews-input-1" checked>
+                  <input class="rewiews-slider" type="radio" name="rewiews" id="rewiews-input-1">
+                  <input class="rewiews-slider" type="radio" name="rewiews" id="rewiews-input-1">
+              </div>
+              <div class="rewiew__lists">
+                  <blockquote class="rewiew__list  slider__list">
+                     <div class="rewiews__author-foto">
+                         <img src="images/author-foto.jpg" width="50px" height="33" alt="фото Трэвиса Баркера">
+                     </div>
+                     <cite class="rewiews__author-name">
+                         Трэвис Баркер
+                     </cite>
+                     <p>
+                         Спасибо за лысину! Был проездом в Москве, заскочил побриться, 
+                         чтобы было видно новую татуировку!
+                     </p>   
+                  </blockquote>
+                  <button class="rewiew__prev" type="button">
+                  Преведущий отзыв</button>
+                  <button class="rewiew__prev" type="button">
+                  Следующий отзыв</button>
+              </div>
+              <div class="rewiews__toggles slider__toggles">
+                     <label class="slider__toggle" for="rewiews-input-1">1</label>
+                     <label class="slider__toggle" for="rewiews-input-2">2</label>
+                     <label class="slider__toggle" for="rewiews-input-3">3</label>
+                 </div>
+          </section>
+       </menu>
+       <footer>
+          <div class="page-footer__wrapper">
+              <p class="page-footer__contacts">
+                  <b>Барбершоп Бородинский</b>
+                  г. Санкт-Петербург, ул. Большая Конюшенная 19/8
+                  <a href="tel:+78125556666"><span class="page-footer__contacts-hidden">Тел.:</span>              +7 (812) 555-66-66</a>
+              </p>
+          </div>
+          <div class="page-footer__social">
+              <h3 class="page-footer__title">Давайте дружить!Ist</h3>
+              <span class="social-links">
+                  <a href="#" class="soclial-link soclial-link--vk"> VK</a>
+                  <a href="#" class="soclial-link soclial-link--fc"> FC</a>
+                  <a href="#" class="soclial-link soclial-link--inst">Inst</a>
+              </span>
+          </div>
+          <div class="page-footer__copyright">
+              <h3 class="page-footer__copyright-title">Разработано:</h3>
+              <a class="page-footer__copyright-link" href="#">     HTML ACADEMY</a>
+              <script>document.write('<script src="http://' + (location.host || 'localhost').split(':')[0] + ':35729/livereload.js?snipver=1"></' + 'script>')</script>
+          </div>    
+       </footer>
+    </body>
+</html>
