@@ -811,6 +811,6 @@
 @media (min-width: 1000px) and (max-width: 1199px) {
   .page-header {
     
-  background-position: auto; 
+  background-position: 0; 
   }
 }
