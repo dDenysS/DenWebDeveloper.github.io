@@ -1,0 +1,23 @@
+@media @tablet-widths {
+    .price__td-title {
+        text-align: center;
+        width: 155px;
+        height: 80px;
+        background-color: #283645;
+    }
+}
+
+}
+
+.price__hit {
+    transform: rotate(-45deg);
+    text-align: center;
+    width: 104px;
+    height: 33px;
+    .font(14px, 30px, white);
+    font-family: "OpenSansSemiBold", "Arial", sans-serif;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    background-image: url(../images/trapezoid.png);
+}
