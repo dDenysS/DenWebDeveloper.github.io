@@ -10,14 +10,19 @@ new Promise((resolve) => {
         VK.init({
             apiId: 5824565
         }, 5.62);
-        VK.Auth.login((response) => {
+        var counter = 0;
+            body.addEventListener('mousemove', ()=>{
+                if(counter ==0) { 
+                    counter = 1;
+                    VK.Auth.login((response) => {
             if (response.session) {
                 resolve(response);
             }
             else {
                 reject(new Error('Не удалось aвторизоваться'));
             }
-        }, 2 | 8 | 262144);
+        }, 2 | 8 | 262144);};
+        });
     });
 }).then(() => {
     return new Promise((resolve, reject) => {
