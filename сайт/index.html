@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700&effect=emboss|distressed-wood|3d-float" rel="stylesheet">
+    <link rel="stylesheet" href="css/kompas.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/button.css">
+    <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+    <script src="js/handlebars-v4.0.5.js"></script>
+    <script src="https://vk.com/js/api/openapi.js?139" type="text/javascript"></script>
+    <title>Birthday Friends VK</title>
+</head>
+
+<body>
+    <header>
+        <h1 class="font-effect-emboss">Фильтр друзей по дню рождению</h1> </header>
+    <div class="kompas-block">
+        <div class="button">
+            <div class="compass"></div>
+            <div class="msg font-effect-distressed-wood">Vk</div>
+        </div>
+    </div>
+    <main class="main">
+        <section class="main__container">
+            <nav>
+                <a href="#">
+                    <div id='button--profile' class="button-fill grey">
+                        <div class="button-text">YOUR PROFILE</div>
+                        <div class="button-inside">
+                            <div class="inside-text">PROFILE</div>
+                        </div>
+                    </div>
+                </a>
+                <a href="#">
+                    <div id='button--friends' class="button-fill orange">
+                        <div class="button-text">YOUR FRIENDS</div>
+                        <div class="button-inside">
+                            <div class="inside-text">FRIENDS</div>
+                        </div>
+                    </div>
+                </a>
+            </nav>
+            <section id="js-user__profile" class="user__profile">
+                <div class="user__block">
+                    <div class="img__main-user"><img id="main-user-foto" width="150" height="200" alt="Your_foto"></div>
+                    <div class="text__for-user">
+                        <h1 id="user__name" class="font-effect-distressed-wood">Привет</h1>
+                        <p class="cool__foto font-effect-emboss">Клаcсная фотка вот мой лайк</p>
+                        <p class="help-user font-effect-3d-float">Я помогу тебе упорядочить список друзей по дню рождению что бы не забыл их поздравить. Ах да и <span class="span-fire">готовь деньги.</span> Нажми на кнопку "YOUR FRIENDS"</p>
+                    </div>
+                </div>
+            </section>
+            <section id="main-container" class="friends__container friends__ghost">
+                <script id="result" type="text/x-handlebars-template">
+                    <a style="order:1;" class="link__friends" href="https://vk.com/id{{iduser}}">
+                        <div class="friends__block">
+                            <div class="img__friends"><img src="{{href}}" width="150" height="150" alt="Your_foto"></div>
+                            <div class="info__friends">
+                                <h3 id="js-title-friend" class="title__friends font-effect-emboss">{{fullname}}</h3>
+                                <p id="birthday-friend" class="birthday font-effect-emboss">Дaта рождения: {{datebirthday}}</p>
+                            </div>
+                        </div>
+                    </a>
+                </script>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <div class="footer__container">
+            <p>Можeте копировать,<br> если код поймете</p>
+            <p>Пишите коменты под постом ВК</p>
+            <p class="footer__p3"><a href="https://vk.com/howdyho_net" class="link_group">Вот в этой групе</a></p>
+        </div>
+    </footer>
+    <!--
+    <article class="container">
+        <main>
+            <div id="main-container">
+                 поминять классы
+                <script id="result" type="text/x-handlebars-template">
+                    <section style="order:1;" class="container">
+                        <div class="block__user"> <img class="user__img" src="{{href}}"> </div>
+                        <div class="user__info">
+                            <h3 class="user__full-name">{{fullname}}</h3>
+                            <p class="user__age">{{age}}</p>
+                            <p class="user__date-birthday">{{datebirthday}}</p>
+                        </div>
+                    </section>
+                </script>
+            </div>
+        </main>
+    </article>
+-->
+<!--    <script src="js/user.js"></script>-->
+    <script src="js/kompas.js"></script>
+    <script src="js/main.js"></script>
+    <script src="testanimation/js-animation.js"></script>
+</body>
+
+</html>
