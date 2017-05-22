@@ -116,6 +116,7 @@
     color: #fff;
     background: url("../img/night-sky.png") no-repeat;
     background-size: cover;
+    border-top-right-radius: 2.93rem;
     border-bottom-right-radius: 2.93rem; }
     #form-block .form-block__night-sky h2 {
       color: #fff;
