@@ -28,9 +28,8 @@
   color: #423f54;
   padding-right: 2rem; }
   #form-block .form-block__shadow {
+    border-radius: 2.93rem;
     box-shadow: 0px 0px 6rem rgba(0, 0, 0, 0.2); }
-    #form-block .form-block__shadow > .row {
-      border-radius: 2.93rem; }
   #form-block .form-group {
     margin-bottom: 0; }
   #form-block h2 {

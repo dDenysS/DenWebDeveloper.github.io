@@ -40,9 +40,7 @@ $green:#10a38d;
 	padding-right: 2rem;
 
 	.form-block__shadow {
-		&>.row {
-			border-radius:2.93rem;
-		}
+		border-radius:2.93rem;
 		box-shadow:0px 0px 6rem rgba(0,0,0,0.2);
 	}
 	.form-group {
