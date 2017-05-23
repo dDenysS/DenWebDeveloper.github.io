@@ -5,8 +5,13 @@ $green:#10a38d;
 	font-size: 1.06rem;
 	font-weight: 900;
 
-	.navbar-toggler-icon {
-		color: #000;
+	button {
+		background: $green url("../img/buffer.svg") no-repeat center center;
+		background-size: 35px 50px;
+	}
+
+	button.collapsed {
+		background-color: transparent;
 	}
 	a {
 		text-transform: uppercase;

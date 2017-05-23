@@ -3,8 +3,11 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.06rem;
   font-weight: 900; }
-  #header .navbar-toggler-icon {
-    color: #000; }
+  #header button {
+    background: #10a38d url("../img/buffer.svg") no-repeat center center;
+    background-size: 35px 50px; }
+  #header button.collapsed {
+    background-color: transparent; }
   #header a {
     text-transform: uppercase;
     color: #423f54; }
