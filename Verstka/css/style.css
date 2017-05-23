@@ -3,7 +3,7 @@
   font-family: "Roboto", sans-serif;
   font-size: 1.06rem;
   font-weight: 900; }
-  #header button {
+  #header button.navbar-toggler {
     background: #10a38d url("../img/buffer.svg") no-repeat center center;
     background-size: 35px 50px; }
   #header button.collapsed {
