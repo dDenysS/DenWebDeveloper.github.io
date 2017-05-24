@@ -1,0 +1,73 @@
+@function c($n) {
+	@return $n/16 + 0rem;
+}
+#FAQ {
+#header {
+	padding-top: c(28);
+	padding-bottom: c(28);
+	
+	
+	box-shadow:none;
+	min-height: 90px;
+	margin-bottom: 0;
+}
+
+.jumbotron {
+	margin-top: 0;
+	background: url("../img/faq-jumbotron-bg.jpg") no-repeat center center;
+	padding-top: 330/16 + 0rem;
+	padding-bottom: 192/16 + 0rem;
+	background-size: cover;
+	text-align: center;
+	h1 {
+		color: #fff;
+		font-size: 7.5rem;
+	font-family: "Roboto Slab", "Arial",sans-serif;
+	}
+}
+#contacts{
+	margin: 0;
+}
+
+.footer__jumbotron {
+	font-size: 80/16 + 0rem;
+	padding-top: c(258);
+	padding-bottom: c(140);
+	margin-bottom: c(15);
+
+	font-family: "Roboto", "Arial",sans-serif;
+	background-image: url("../img/faq-junbotron-bg-footer.jpg");
+
+	a {
+		color: #fff;
+		background-color: #629e60;
+		padding: c(25) c(22);
+		font-size: c(17);
+		border-radius: c(18);
+		font-weight: 900;
+		
+	}
+}
+
+#footer__nav .nav { 
+	margin-bottom: 0;
+}
+
+
+}
+
+@media(max-width:650px) {
+	#FAQ {
+		.jumbotron h1 {
+			font-size: 2.5rem;
+		}
+	}
+}
+
+@media(max-width:650px) {
+	#FAQ {
+		.jumbotron h1 {
+			font-size: 5.5rem;
+		}
+	}
+}
