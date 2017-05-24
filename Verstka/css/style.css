@@ -12,12 +12,13 @@ body {
     text-transform: uppercase;
     background-color: transparent; }
   #header button.navbar-toggler {
-    background: #10a38d url("../img/buffer.svg") no-repeat center center;
+    background: url("../img/buffer.svg") no-repeat center center;
     background-size: 35px 50px; }
   #header button.collapsed {
     background-color: transparent; }
+  #header li {
+    margin-right: 1.5rem; }
   #header a {
-    padding-right: 0.7rem;
     text-transform: uppercase;
     color: #423f54; }
   #header .active a {
@@ -156,7 +157,7 @@ body {
 
 #contacts {
   margin-top: 4.0625rem;
-  text-align: left;
+  text-align: right;
   color: #9a98a0;
   font-size: 15/16rem;
   font-family: "Roboto", "Arial", sans-serif; }
