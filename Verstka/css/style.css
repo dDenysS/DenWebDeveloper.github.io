@@ -1,8 +1,10 @@
 #header {
+  margin-bottom: 6rem;
   min-height: 80px;
   font-family: "Roboto", sans-serif;
   font-size: 1.06rem;
-  font-weight: 900; }
+  font-weight: 900;
+  box-shadow: 0 3px 3rem rgba(0, 0, 0, 0.3); }
   #header button.navbar-toggler {
     background: #10a38d url("../img/buffer.svg") no-repeat center center;
     background-size: 35px 50px; }
@@ -33,12 +35,6 @@
     background-color: #e6ccac; }
   #header form a:last-child:before {
     width: 11rem; }
-
-#white-line {
-  margin-top: 3rem;
-  margin-bottom: 8rem;
-  height: 5.625rem;
-  box-shadow: 0 0px 5rem rgba(0, 0, 0, 0.2); }
 
 #form-block {
   font-family: "Roboto", "Arial",sans-serif;
