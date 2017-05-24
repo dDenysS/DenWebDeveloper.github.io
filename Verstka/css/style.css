@@ -26,12 +26,12 @@
     content: "";
     position: absolute;
     height: 0.0625rem;
-    width: 4.5rem;
+    width: 4rem;
     bottom: -0.3125rem; }
   #header form a:hover:before {
     background-color: #e6ccac; }
   #header form a:last-child:before {
-    width: 11.5rem; }
+    width: 11rem; }
 
 #white-line {
   margin-top: 4.125rem;
