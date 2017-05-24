@@ -16,6 +16,8 @@ body {
     background-size: 35px 50px; }
   #header button.collapsed {
     background-color: transparent; }
+  #header ul.navbar-nav {
+    margin-left: auto; }
   #header li {
     margin-right: 1.5rem; }
   #header a {
