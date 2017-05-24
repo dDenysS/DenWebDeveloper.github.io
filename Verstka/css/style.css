@@ -5,6 +5,9 @@
   font-size: 1.06rem;
   font-weight: 900;
   box-shadow: 0 3px 3rem rgba(0, 0, 0, 0.3); }
+  #header button {
+    text-transform: uppercase;
+    background-color: transparent; }
   #header button.navbar-toggler {
     background: #10a38d url("../img/buffer.svg") no-repeat center center;
     background-size: 35px 50px; }
@@ -14,8 +17,6 @@
     padding-right: 0.7rem;
     text-transform: uppercase;
     color: #423f54; }
-  #header button {
-    text-transform: uppercase; }
   #header .active a {
     border-radius: 16px;
     background-color: #10a38d;
