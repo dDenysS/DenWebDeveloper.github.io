@@ -541,22 +541,7 @@ h1,h2,h3,h4,h5,h6 {
 		padding: 0 p(83,1280);
 	}
 }
-
-
-.green-buttons {
-	width: 255px;
-	display: block;
-	text-align: center;
-	text-decoration: none;
-	color:#fff;	
-	display: block;
-	border-radius: 34px;
-	font-family: 'Certa-Sans-Medium','Arial', sans-serif;
-	font-size: 28px;
-	line-height: 29px;
-	padding:19.7px 0px;
-	background-color: #87c66a;
-}
+ 
 /*-------ABOUT--------*/
 
 .section {
@@ -782,6 +767,7 @@ h1,h2,h3,h4,h5,h6 {
 	}
 }
 .about__wrapper {
+	padding: 0 10%;
 	font-family: 'Open-Sans', 'Arial', sans-serif;
 	background:transparent url('../img/bg-green-about.jpg') left -147px no-repeat;
 	padding-top: 65px;
@@ -1057,17 +1043,24 @@ h1,h2,h3,h4,h5,h6 {
 
 .microsurgery {
 	margin: 0 3px;
+	margin-bottom: 66px;
 	padding-bottom: 17px;
 	color: #fff; 
 	background-color: #7aaa7d;
 
 	@include tablet() {
-		padding-bottom: 0;
 		margin: 0;
+		margin-bottom: 41px;
 		padding-top: 65px;
 		background:transparent url('../img/microsurgery-bg.jpg') left top no-repeat;
 		background-size: 100% auto;
 	}  
+
+	@include laptop-or() {
+		padding-left: 30.8%;
+		padding-top: 102px;
+		margin-bottom: 71px;	
+	}
 }
 
 .microsurgery__wrapper {
@@ -1080,6 +1073,13 @@ h1,h2,h3,h4,h5,h6 {
 		padding-top: 63px;
 		padding-left: 7.5%;
 		background-color: rgba(#528d4a,0.75);
+	}
+
+	@include laptop-or() {
+		padding-top: 59px;
+		padding-left: 10.5%;
+		padding-right: 18%;
+		padding-bottom: 163px;	 
 	}
 }
 
@@ -1094,6 +1094,13 @@ h1,h2,h3,h4,h5,h6 {
 	@include tablet() {
 		margin-bottom: 18px;
 	}
+
+	@include laptop-or() {
+		padding-right: 0;
+		font-size: 36px;
+		line-height: 47px;
+		margin-bottom: 16px;
+	}
 }
 
 .microsurgery__intro {
@@ -1104,6 +1111,12 @@ h1,h2,h3,h4,h5,h6 {
 	font-family: 'Certa-Sans-Medium', 'Arial', sans-serif;
 	@include tablet() {
 		margin-bottom: 18px;
+	}
+
+	@include laptop-or() {
+		font-size: 21px;
+		line-height: 21px;
+		margin-bottom: 20px;
 	}
 }
 
@@ -1130,6 +1143,12 @@ h1,h2,h3,h4,h5,h6 {
 		display: flex;
 		flex-wrap: wrap;
 	}
+
+	@include laptop-or() {
+		margin-top: -4px;	
+		margin-right: 5px;	
+		justify-content: space-between;	
+	}
 }
 
 .microsurgery__item {
@@ -1138,4 +1157,121 @@ h1,h2,h3,h4,h5,h6 {
 	@include tablet() {
 		width: 50%;
 	}
+
+	@include laptop-or() {
+		width: 39%;	
+	}
 } 
+
+.news__title { 
+	text-transform: uppercase; 
+	font-family: 'Certa-Sans-Medium', 'Arial', sans-serif;
+	font-size: 30px;
+	line-height: 32px;
+	margin-bottom: 30px;
+
+	@include tablet() {
+		font-size: 71px;
+		line-height: 72px;
+		margin-bottom: 27px;
+	}
+
+	@include laptop-or() {
+		margin-bottom: 35px;	
+	}
+}
+
+.news__slider-container {
+	@include tablet() {
+		margin: 0; 
+	}
+}
+
+.news__items { 
+	margin-bottom: 50px;
+
+	@include tablet() {
+		justify-content: space-between;
+		width: 153%;
+		margin-bottom: 37px;
+	}
+
+	@include t900() {
+		width: 100%;
+	}
+}
+
+.news__link {
+	text-decoration: none;
+	display: block;
+	color: #000;
+}
+
+.news__img {
+	margin-bottom: 32px;
+	width: 255px;
+	height: 255px;
+
+	@include laptop-or() {
+		width: 355px;
+		height: 355px;
+	}
+}
+
+.news__date {
+	font-size: 14px;
+	font-family: 'Open-Sans', 'Arial', sans-serif;
+}
+
+.news__item-title { 
+	font-size: 27px;
+	line-height: 36px;
+	font-weight: bold;
+	font-family: 'Roboto-Condensed-Regular', 'Arial', sans-serif;
+	color: #87c66a;
+
+	@include laptop-or() {
+		margin-bottom: 9px;
+	}
+}
+
+.news__paragraph  {
+	margin: 0;
+	font-family: 'Open-Sans', 'Arial', sans-serif;
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.news__controls {
+	margin-bottom: 44px;
+
+	@include tablet() {
+		margin: 0;
+	}
+}
+.news__link--all-news {
+	width: 255px;
+	text-align: center;
+	text-decoration: none;
+	color:#fff;	
+	display: block;
+	border-radius: 34px;
+	font-family: 'Roboto-Condensed-Regular', 'Arial', sans-serif;
+	font-size: 25px;
+	font-weight: bold;
+	line-height: 26px;
+	padding:22px 0px;
+	padding-bottom: 21px; 
+	background-color: #87c66a;
+
+	@include tablet() {
+		width: 293px;
+		margin: 0 auto;
+	}
+
+	@include laptop-or() {
+		padding: 24px 0 21px;
+		font-size: 28px;
+		line-height: 28px;
+	}
+}
