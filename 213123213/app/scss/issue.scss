@@ -1,0 +1,134 @@
+@mixin phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin tablet {
+  @media (min-width: 600px) { @content; }
+}
+@mixin tablet {
+  @media (min-width: 900px) { @content; }
+}
+@mixin desktop {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin big-desktop {
+  @media (min-width: 1800px) { @content; }
+}
+
+
+.container {
+	padding-right: 15px;
+	padding-left: 15px;
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', 'Arial', sans-serif;
+	background-color: #252830;
+	color: #ffffff;  
+}
+header {
+	border: 1px solid #434857;
+	padding-bottom: 15px;
+}
+
+.header__container {
+	margin-top: 50px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+
+	@include phone-only {
+		flex-wrap: wrap; 
+		margin-top: 20px;
+		justify-content: center;
+	}
+
+	div {
+		@include phone-only {
+			text-align: center;
+			width: 100%;
+		}
+	}
+}
+
+.header__intro{
+	font-size: 15px;
+	color: #434857;
+	margin-bottom: 10px;
+}
+
+.hrader__logo {
+	font-size: 29px;
+}
+
+.form-search {
+	max-width: 300px;
+	width: 100%;
+	position: relative;
+	@include phone-only {
+		margin-top: 20px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+.form-search__search {
+	background-color: #434857;
+	display: block;
+    width: 100%;
+    padding: 8px 15px;
+    font-size: 14.4px;
+    line-height: 1.25;
+    color: #fff;
+    background-color: #434857;
+    background-image: none;
+    border: 1px solid #434857;
+    border-radius: 0.25rem;
+}  
+
+
+.form-search__sumbit {
+	position: absolute;
+    top: 0;
+    right: 0;
+    color: #9198aa;
+        padding: 9px 10px;
+    border: 0;
+    font-size: 0;
+    height: 35.6px;
+    width: 35.6px;
+    background-image: url("../img/magnifier.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: 20px 20px;
+}

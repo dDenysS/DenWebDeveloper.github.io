@@ -1,0 +1,30 @@
+{
+  "name": "gib",
+  "version": "1.0.0",
+  "description": "GitHub​​Issue​​Browser ",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "boostrap": "^2.0.0",
+    "bootstrap": "^4.0.0-beta.2",
+    "browser-sync": "^2.18.12",
+    "gulp-autoprefixer": "^4.0.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.3.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uncss": "^1.0.6",
+    "gulp-util": "^3.0.8",
+    "normalize.css": "^7.0.0",
+    "pug": "^2.0.0-rc.4"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-until": "^0.1.3"
+  }
+}
