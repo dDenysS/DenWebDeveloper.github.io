@@ -13,6 +13,7 @@
 
 
 .warning {
+    margin-right: 3px;
     font-weight: bold;
     text-transform: uppercase;
     color: #856404;
@@ -21,6 +22,7 @@
 }
 
 .wrong {
+    margin-right: 3px;
     font-weight: bold;
     text-transform: uppercase;
     color: #721c24;
@@ -29,6 +31,7 @@
 }
 
 .success {
+    margin-right: 3px;
     font-weight: bold;
     text-transform: uppercase;
     color: #155724;
@@ -38,4 +41,9 @@
 
 .answers__item {
     padding: 5px;
+    display: flex;
+    align-items: center;
+    margin: 4px 0;
+    border: 0 solid #000;
+    border-bottom-width: 1px;
 }
