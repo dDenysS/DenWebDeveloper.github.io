@@ -1,0 +1,41 @@
+.container {
+    font-family: 'Roboto', 'Arial', sans-serif;
+    max-width: 90%;
+    padding: 5px;
+    margin: 0 auto;
+}
+
+.question {
+    box-shadow: 0px 0px 5px #000000c2;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+
+.warning {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #856404;
+    background-color: #fff3cd;
+    border-color: #ffeeba;
+}
+
+.wrong {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.success {
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
+
+.answers__item {
+    padding: 5px;
+}
