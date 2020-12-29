@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <input id="#js-search-input" type="text">
+    <button id="#js-search-button">Пошук</button>
+</div>
+<div class="container">
+    <div class="questions"></div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.1.2/handlebars.min.js"></script>
+<script id="template-questions" type="text/x-handlebars-template">
+    {{#each data}}
+    <div class="question">
+        <div class="title">{{question}}</div>
+        {{#if imgSrc}} <img src="{{imgSrc}}" alt=""> {{/if}}
+        <ul class="answers__items">
+            {{#each answers}}
+            <li class="answers__item">
+                <u class="{{ type correct}}">{{ textStatus correct}}</u> <span>{{text}}</span>
+            </li>
+            {{/each}}
+        </ul>
+    </div>
+    {{/each}}
+</script>
+<script src="data.js"></script>
+<script src="render.js"></script>
+<script src="search.js"></script>
+</body>
+</html>
