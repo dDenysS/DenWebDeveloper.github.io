@@ -21,7 +21,7 @@
     "gulp-uncss": "^1.0.6",
     "gulp-util": "^3.0.8",
     "normalize.css": "^7.0.0",
-    "pug": "^2.0.0-rc.4"
+    "pug": "^3.0.1"
   },
   "dependencies": {
     "gulp": "^3.9.1",
